@@ -9,7 +9,7 @@ export const  Provider = (props) => {
   const nav = useNavigate();
   const userSignIn = (loginData) => {
     axios
-      .post("http://localhost:5000/login", loginData)
+      .post("https://todo-backend-rmka.onrender.com/login", loginData)
       .then((res) => {
         const token = res.data.token;
         localStorage.setItem("token", token);
@@ -29,7 +29,7 @@ export const  Provider = (props) => {
   const userSignUp = (userData) => {
     try {
       axios
-        .post("http://localhost:5000/register", userData)
+        .post("https://todo-backend-rmka.onrender.com/register", userData)
         .then((res) => {
           nav("/");
           window.alert("Registration Successful");
@@ -50,7 +50,7 @@ export const  Provider = (props) => {
   const postContent = async (ContactsData) => {
 
     return await axios
-      .post("https://localhost:5000/add", ContactsData, config)
+      .post("https://todo-backend-rmka.onrender.com/add", ContactsData, config)
       .then((res) => console.log(res))
       .catch((err) => {
         console.log(err.response.data.message)
@@ -60,7 +60,7 @@ export const  Provider = (props) => {
 
   const fetchContent = () => {
     axios
-      .get("https://localhost:5000/alldata", config)
+      .get("https://todo-backend-rmka.onrender.com/alldata", config)
       .then((res) => {
         console.log(res.data[0].contact);
         const data = res.data[0].contact;
