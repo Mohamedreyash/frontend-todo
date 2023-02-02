@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 5vh 10vw;
+  display: grid;
+  align-self: center;
+  height: 90vh;
+  width: 80vw;
+}
+
+.signUp-container {
+  display: grid;
+  align-self: center;
+  align-items: center;
+  height: 60vh;
+  width: 30vw;
+  margin: auto 25vw;
+  margin-top: 70px;
+  background: white;
+}
+
+.signUp-header {
+  display: grid;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.signUp-header h4 {
+  margin: auto 30px;
+  margin-top: 25px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.signUp-header p {
+  margin: auto auto;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 45px;
+}
+
+.signUp-form {
+  margin: auto;
+  display: grid;
+}
+
+.email-input {
+  height: 40px;
+  width: 335px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding-left: 40px;
+}
+
+.password-input {
+  height: 40px;
+  width: 335px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding-left: 40px;
+}
+
+.email-input:focus,
+.password-input:focus {
+  outline: none !important;
+}
+
+.email-input::placeholder,
+.password-input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  color: #000000;
+  opacity: 0.4;
+}
+
+.button-1 {
+  margin: auto 1px;
+  height: 40px;
+  width: 378px;
+  background: #4592fc;
+  border-radius: 5px;
+  border: 1px solid #4592fc;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+}
+.signup{
+  display: flex;
+  margin-left: 100px;
+}
+.button-2 {
+  border-bottom: 2px solid black;
+}
+
+.button-1:hover,
+.button-2:hover {
+  cursor: pointer;
+}
+
+.button-1:hover {
+  color: white;
+  background-color: #225aa8;
+}
+
+.button-2:hover {
+  color: #23293c;
+}
+
+.email-input:hover,
+.password-input:hover {
+  border: 2px solid #7d8cc4;
+}
+
+.sign-in {
+  margin: auto;
+  position: absolute;
+  left: 48.5%;
+  bottom: 115px;
+}
+
+.errors {
+  position: relative;
+  top: -20px;
+}
+
+.eye {
+  position: relative;
+  right: 40px;
+}
